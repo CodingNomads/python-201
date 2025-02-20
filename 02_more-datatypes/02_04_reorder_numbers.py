@@ -1,8 +1,18 @@
 # Read in 10 numbers from the user.
 # Place all 10 numbers into an list in the order they were received.
-# Print out the second number received, followed by the 4th, 
+# Print out the second number received, followed by the 4th,
 # then the 6th, then the 8th, then the 10th.
 # Then print out the 9th, 7th, 5th, 3rd, and 1st number:
 #
 # Example input:  1,2,3,4,5,6,7,8,9,10
 # Example output: 2,4,6,8,10,9,7,5,3,1
+
+numbers = []
+for _ in range(10):
+    numbers.append(int(input("Enter a number: ")))
+
+for x in range(1, 10, 2):
+    print(numbers[x])
+
+for x in range(8, -1, -2):
+    print(numbers[x])

@@ -4,8 +4,12 @@
 # - assign the output to a variable
 # - print that variable
 
+
 def shout(name):
     loud_name = name.upper()
+    # New
+    return loud_name
 
-shout("wilma")
+
+loud_name = shout("wilma")
 print(loud_name)
