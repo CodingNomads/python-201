@@ -7,11 +7,4 @@
 
 from resources import randlist
 
-numbers = randlist
-
-print(max(numbers))
-
-prod = 1
-for x in numbers:
-    prod *= x
-print(prod)
+print(randlist)

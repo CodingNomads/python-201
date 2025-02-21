@@ -9,20 +9,11 @@
 # If the list has an odd number of items,
 # add the last item to a tuple together with the number `0`.
 #
-# Note: This lab might be challenging! Make sure to discuss it
+# Note: This lab might be challenging! Make sure to discuss it 
 # with your mentor or chat about it on our forum.
 
 from resources import randlist
 
-numbers = randlist
-numbers.sort()
+print(randlist)
 
 # Write your code below here
-if len(numbers) % 2 == 1:
-    numbers.append(0)
-
-res = []
-for x in range(0, len(numbers), 2):
-    res.append((numbers[x], numbers[x + 1]))
-
-print(res)
